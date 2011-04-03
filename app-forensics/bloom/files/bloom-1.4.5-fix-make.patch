@@ -1,0 +1,11 @@
+--- src/Makefile.am.orig	2011-03-28 02:46:54.458499767 -0500
++++ src/Makefile.am	2011-03-28 02:47:05.641499758 -0500
+@@ -1,7 +1,7 @@
+ BLOOM   = bloom.c bloom.h 
+ AFTIMER = aftimer.h
+ 
+-bin_PROGRAMS       =  bloom disk_bloom regression bloomcat bloom_math frag_find \
++bin_PROGRAMS       =  bloom regression bloomcat bloom_math frag_find \
+ 	demo_bloom demo_cpp demo_crypto speed_hash speed_bloom  \
+ 	 block_scan $(A2PROGRAMS)
+ 
