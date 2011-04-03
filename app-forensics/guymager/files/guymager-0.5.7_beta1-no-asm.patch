@@ -1,0 +1,15 @@
+--- sha256.cpp.orig	2011-04-01 21:07:03.619086013 -0500
++++ sha256.cpp	2011-04-01 21:07:37.231850587 -0500
+@@ -27,9 +27,9 @@
+ 
+ #include "sha256.h"
+ 
+-#if defined(__i386__) || defined (__amd64__)
+-   #define SHA256_USE_OPTIMISED_ASSEMBLER_CODE
+-#endif
++//#if defined(__i386__) || defined (__amd64__)
++//   #define SHA256_USE_OPTIMISED_ASSEMBLER_CODE
++//#endif
+ 
+ 
+ // Guy: The original GET_UINT32 and PUT_UINT32 are

@@ -1,0 +1,26 @@
+--- configure.ac.orig	2011-03-20 21:13:26.000000000 -0500
++++ configure.ac	2011-03-27 23:51:46.040078453 -0500
+@@ -71,13 +71,21 @@
+ AC_HEADER_STDC
+ AC_CHECK_FUNCS([printf getrusage atoi64])
+ AC_CHECK_HEADERS([err.h inttypes.h sys/disk.h sys/mman.h sys/resource.h unistd.h openssl/hmac.h openssl/pem.h sys/utsname.h regex.h])
+-AC_CHECK_LIB([mysqlclient],[mysql_real_connect],,AC_MSG_WARN([mysql client not found]))
+ AC_CHECK_LIB([ssl],[ssl3_new],,AC_MSG_ERROR([OpenSSL developer library 'libssl-dev' not installed; cannot continue.]))
+ AC_CHECK_LIB([crypto],[MD5_Update],,AC_MSG_ERROR([OpenSSL developer library 'libcrypto' not installed; cannot continue.]))
+-AC_CHECK_LIB([afflib],[af_open])
+ AC_CHECK_LIB([regex],[regcomp])		# see if we need -lregex
+ AC_CHECK_LIB([m],[exp])			# see if we need -lm
+ 
++AC_ARG_WITH([afflib], AS_HELP_STRING([--without-afflib], [Build without aff library (default: test)]))
++if test "x$with_afflib" != "xno"; then
++  AC_CHECK_LIB([afflib],[af_open])
++fi
++
++AC_ARG_WITH([mysql], AS_HELP_STRING([--without-mysql], [Build without mysql support (default: test)]))
++if test "x$with_mysql" != "xno"; then
++  AC_CHECK_LIB([mysqlclient],[mysql_real_connect],,AC_MSG_WARN([mysql client not found]))
++fi
++
+ 
+ 
+ 
