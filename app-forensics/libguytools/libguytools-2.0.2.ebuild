@@ -10,7 +10,7 @@ LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~x86"
 IUSE="debug"
-EAPI="2"
+EAPI="5"
 
 DEPEND="x11-libs/qt-core"
 RDEPEND="${DEPEND}"
