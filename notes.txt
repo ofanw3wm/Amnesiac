@@ -1,0 +1,15 @@
+I swiped this for the guymager gui 
+https://www.pinguin.lu/xmount utlity i swiped from Dev-zero 
+Version bumped xmount 0.6.x is now autobuilding for Gentoo / Sabayon Entropy bin repo's .... 
+
+it alows for High quality forensic disc captures and conversions to 
+EnCase , and other common types used by law enforment or Foresics pros..
+
+
+Hopefully the pentoo team can find use for these...
+
+the bumped ebuilds knowing my luck wont initiall pass qa and since 
+api version has been bumped it's be my luck that the ebuild will snafu just like gentoo-science try to give them a 
+github gui bump and snap....
+
+http://scripts4cf.sourceforge.net/also might be useful to package...... 
