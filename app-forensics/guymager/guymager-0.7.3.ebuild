@@ -6,11 +6,10 @@ EAPI="5"
 
 inherit qt4-r2
 
-MY_P="${P/_beta/beta}"
-
+http://sourceforge.net/projects/guymager/files/latest/download?source=files
 DESCRIPTION="Guymager is a fast and user friendly forensic imager."
 HOMEPAGE="http://guymager.sourceforge.net/"
-SRC_URI="mirror://sourceforge/guymager/${MY_P}.tar.gz"
+SRC_URI="mirror://sourceforge/guymager/${PV}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
